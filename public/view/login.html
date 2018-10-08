@@ -1,8 +1,32 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 mx-auto my-5">
-            <a class="btn btn-lg shadow bg-danger text-white p-3 pr-5 rounded font-weight-light w-100" href="{{authUrl}}">
-                <i class="fab fa-google mx-3 d-inline-block text-light"></i> Sign in with Google
+    <div class="row mt-5 justify-content-center align-self-center">
+        <div class="col-md-6 mt-5 mx-auto p-5 align-self-center shadow-lg bg-white rounded text-secondary">
+            <h4>Google Drive Image Upload using OAuth2.0</h4>
+            <hr class="my-4">
+            <p class="lead text-justify">
+                This is a sample Express application implemented to explain the <b>Google OAuth2.0</b>
+            </p>
+            <p>
+                <small>Sign in with your Google account to upload images to your Google Drive</small>
+            </p>
+            <br />
+            <a class="disabled mt-2" href="https://github.com/athiththan11/G-Drive-OAuth-Image-Upload" target="_blank">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <use xlink:href="node/feather-icons/dist/feather-sprite.svg#github" />
+                </svg>
+                Github Repo
+            </a>
+            <br /><br />
+            <a class="text-muted disabled" href="https://medium.com/@code19111995/google-drive-image-upload-with-oauth-2-0-ab0d3b4a75bc"
+                target="_blank">
+                <img src="https://cdn-images-1.medium.com/max/1600/1*TGH72Nnw24QL3iV9IOm4VA.png" width="80" />
+            </a>
+        </div>
+        <div class="col-md-4 mx-auto align-self-center">
+            <a class="btn btn-lg shadow bg-white text-white p-3 pr-5 rounded font-weight-light w-100" style="background-color: #ea4335 !important;"
+                href="{{authUrl}}">
+                <i class="fab fa-google mx-3 d-inline-block"></i> Sign in with Google
             </a>
         </div>
     </div>
