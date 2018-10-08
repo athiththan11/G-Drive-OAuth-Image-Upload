@@ -1,0 +1,41 @@
+<ul class="nav justify-content-center mt-3">
+    <li class="nav-item">
+        <form class="nav-link">
+            <button class="btn btn-link" type="button" ng-click="logout()">Logout</button>
+        </form>
+    </li>
+</ul>
+
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-4 rounded">
+            <form class="col-md pt-5 pb-3 rounded border shadow text-center">
+                <div class="form-group">
+                    <img class="card-img-top p-5" ngf-src="file || 'https://image.flaticon.com/icons/png/512/281/281764.png'"
+                        alt="Image">
+                </div>
+                <div class="form-group" ng-show="message.message">
+                    <span class="green" ng-show="message.status">{{message.message}}</span>
+                    <span class="red" ng-show="!message.status">{{message.message}}</span>
+                </div>
+                <div class="form-group bg-light text-secondary rounded" for="imageUpload">
+                    <label class="w-100 position-relative d-inline-block m-0 p-3" for="imageUpload">
+                        <div class="div-upload">
+                            <span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span>
+                            <span class="span-alt">Click here to select image</span>
+                        </div>
+                    </label>
+                    <input type="file" class="form-control d-none" id="imageUpload" ngf-select ng-model="file" name="file"
+                        ngf-accept="'image/*'" required>
+                </div>
+                <div class="form-group py-3" ng-show="file">
+                    <span class="text-secondary">Press the <b>Upload</b> button</span>
+                </div>
+                <div class="form-group">
+                    <button type="reset" class="btn btn-block btn-secondary" ng-click="clear()">Clear</button>
+                    <button type="submit" class="btn btn-block btn-primary" ng-click="upload()">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
